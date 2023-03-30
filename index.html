@@ -9,6 +9,21 @@
             margin: 0;
             padding: 0;box-sizing: border-box;
         }
+        .container{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: .5em; */
+            grid-gap: .5em 1em;
+        }
+
+        .container > div {
+            background: #dfd;
+            padding: 1em;
+        }
+        .container > div:nth-child(2n){
+            background: #ccc;
+        }
     </style>
 </head>
 <body>
